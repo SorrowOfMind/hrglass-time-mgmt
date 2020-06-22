@@ -1,0 +1,38 @@
+.detailed-wrapper {
+    width: calc(100vw - 19rem);
+}
+
+.detailed__add {
+    height: 8%;
+    .detailed__form {
+        padding: 0 1rem;
+        @include flexbox(row,center,center);
+        .detailed__input {
+            padding: 0 .5rem;
+        }
+        .controls-wrapper {
+            @include flexbox(row, space-between, center);
+            .timer {
+                padding: 0 1rem;
+            }
+            .controls {
+                height: 100%;
+            }
+        }
+    }
+    .detailed__tasks {
+        height: 62%;
+       
+    }
+}
+
+.task__controls {
+    @include flexbox(row,space-between,center);
+    padding: .5rem 0;
+    padding-left: 1rem;
+}
+
+.task__icons {
+    margin-left: 1rem;
+}
+

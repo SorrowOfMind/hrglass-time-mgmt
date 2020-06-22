@@ -1,0 +1,19 @@
+.not-found {
+    width: 100%;
+    @include flexbox(column, flex-start,center);
+    height: calc(100vh - 5rem);
+    padding-top: 5rem;
+    background-color: $color-bg;
+}
+
+.code-404 {
+    font-size: 8rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.18);
+}
+
+.not-found__msg {
+    font-size: 5rem;
+    color: #fff;
+}

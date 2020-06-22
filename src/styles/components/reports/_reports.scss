@@ -1,0 +1,33 @@
+.chart__section {
+    @include flexbox(column,flex-start,center);
+    width: 100%;
+    padding: 1rem;
+}
+
+.chart, .pie-chart {
+    padding: 1rem 1rem 1rem 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: $shadow-cards;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.apexcharts-datalabel {
+    font-size: 1.3rem;
+}
+
+.apexcharts-title-text {
+    font-size: 1.4rem;
+    color: $color-fontDarkGrey;
+}
+
+.apexcharts-datalabel-label, .apexcharts-datalabel-value {
+    font-size: 1.6rem;
+}
+
+.chart__title {
+    font-size: 1.8rem;
+    padding: 2rem 2.5rem;
+    color: $color-fontDarkGrey;
+}

@@ -1,0 +1,26 @@
+@mixin box-shadow ($x,$y,$blur,$offset,$color) {
+    box-shadow: $x $y $blur $offset $color;
+}
+
+@mixin flexbox ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin transition($val...) {
+    transition: $val;
+}
+
+@function strip-unit($val) {
+    @return $val / ($val * 0 + 1);
+}
+
+@mixin fluid-font($min, $max) {
+    font-size: calc(#{$min} + #{strip-unit($max - $min)} * ((100vw - 360px) / 1200));
+}
+
+@mixin fluid-width($min, $max) {
+    width: calc(#{$min} + #{strip-unit($max - $min)} * ((100vw - 360px) / 1200));
+}

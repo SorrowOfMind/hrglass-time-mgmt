@@ -1,0 +1,36 @@
+.sidenav-wrapper {
+    height: calc(100vh - 5rem);
+    max-width: 19rem;
+}
+
+.sidenav {
+    font-size: 1.6rem;
+    width: 6rem;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: $color-sidenav;
+    .sidenav__link {
+        font-size: 1.8rem;
+        color: #fff;
+        cursor: pointer;
+        transition: background .2s;
+        border-bottom: 1px solid #19415e;
+        .link {
+            display: block;
+            padding: 2rem;
+            height: 100%;
+            width: 100%;
+        }
+        &:hover {
+            background-color: rgba(255,255,255,0.15);
+        }
+        .fa-link {
+            margin-right: 2rem;
+            font-size: 1.8rem;
+        }
+    }
+    .sidenav_active {
+        color: $color-active;
+    }
+}

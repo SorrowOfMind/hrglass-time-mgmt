@@ -1,0 +1,106 @@
+.section {
+    position: absolute;
+    left: 6rem;
+    top: 6.3rem;
+    width: calc(100% - 6rem);
+    height: calc(100% - 6.4rem);
+    overflow: auto;
+    .projects-grid {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+        grid-auto-flow: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        grid-gap: 15px;
+        gap: 15px;
+        padding: 2rem 2.5rem;
+        .project {
+            font-size: 1.8rem;
+            background-color: #fff;
+            height: 25rem;
+            border-radius: 8px;
+            overflow: auto;
+            box-shadow: $shadow-cards;
+            .project__summary {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                &:hover {
+                    background-color: rgba(0,0,0,0.05);
+                }
+            }
+            .project__new {
+                @include flexbox(column,center,center);
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                &:hover {
+                    background-color: rgba(0,0,0,0.05);
+                }
+                .project__icon {
+                    font-size: 4rem;
+                    color: $color-active;
+                }
+                .project__title_new {
+                    padding: 1rem;
+                    color: $color-fontDarkGrey;
+                }
+            }
+            .project__header {
+                background-color: $color-project;
+                padding: 1.2rem;
+                padding-right: 2.8rem;
+                color: #fff;
+                position: relative;
+                .project__title {
+                    display: inline-block;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    padding-bottom: 1rem;
+                    transition: transform .2s;
+                }
+                .project__delete {
+                    position: absolute;
+                    top: 1.2rem;
+                    right: 1rem;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+                .project__deadline, .project__timestamp {
+                    font-size: 1.4rem;
+                }
+                .project__deadline {
+                    padding-bottom: 1rem;
+                }
+            }
+            .project__time {
+                height: auto;
+                text-align: center;
+                padding: 1rem;
+                color: $color-fontGrey;
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            
+            .project__mark {
+                position: absolute;
+                bottom: 0;
+                color: $color-fontGrey;
+                color: $color-project;
+                padding: 2rem 0;
+                font-size: 2.2rem;
+                font-weight: 500;
+                width: 100%;
+                left: 0;
+                text-align: center;
+
+            }
+        }
+    }
+}

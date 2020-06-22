@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;800&display=swap');
+
+@import './styles/utils/reset';
+@import './styles/utils/general';
+@import './styles/utils/mixins';
+@import './styles/utils/vars';
+
+@import './styles/components/navigation/navbar.scss';
+
+@import './styles/components/main/not-found';
+
+@import './styles/components/forms/forms.scss';
+
+@import './styles/components/workspace/workspace.scss';
+
+@import './styles/components/navigation/sidenav.scss';
+
+@import './styles/components/projects/projects.scss';
+
+@import './styles/components/projects/newproject.scss';
+
+@import './styles/components/projects/detailed.scss';
+
+@import './styles/components/workspace/dashboard.scss';
+
+@import './styles/components/main/main.scss';
+
+@import './styles//components/workspace/loader.scss';
+
+@import './styles/components/workspace/bubbles.scss';
+
+@import './styles/components/clients-tags/clients-tags.scss';
+
+@import './styles/components/reports/reports';
+
+@media only screen and (min-width: 520px) {
+  @import './styles/components/navigation/navbar-md.scss';
+}
+
+@media only screen and (min-width: 700px) {
+  @import './styles/components/navigation/sidenav-md.scss';
+  @import './styles/components/projects/projects-md.scss';
+  @import './styles/components/projects/newproject-md.scss';
+  @import './styles/components/projects/detailed-md.scss';
+  @import './styles/components/workspace/bubbles-md.scss';
+  @import './styles/components/reports/reports-md';
+}
+
+@media only screen and (min-width: 850px) {
+  @import './styles/components/workspace/dashboard-md.scss';
+
+}
+
+@media only screen and (min-width: 1021px) {
+  @import './styles/components/main/main-md.scss';
+
+}
+
+@media only screen and (min-width: 1200px) {
+  @import './styles/components/main/main-lg.scss';
+}
+
+
+
+
+
+
+
+

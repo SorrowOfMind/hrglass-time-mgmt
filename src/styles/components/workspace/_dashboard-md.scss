@@ -1,0 +1,6 @@
+.dashboard__activity {
+    @include flexbox(row, space-between, stretch);
+    .dashboard__col {
+        width: 32%;
+    }
+}

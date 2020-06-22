@@ -1,0 +1,20 @@
+.newproject {
+    left: 19rem;
+    width: calc(100vw - 19rem);
+    .newproject__form {
+        .input-wrapper {
+            width: 80%;
+            @include flexbox(row,space-between,center);
+        }
+        .label {
+            padding: 0;
+            align-self: center;
+        }
+        .input-wrapper {
+            width: 100%;
+        }
+        .input {
+            width: 80%;
+        }
+    }
+}

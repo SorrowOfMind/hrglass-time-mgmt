@@ -1,0 +1,8 @@
+.chart__section {
+    @include flexbox(row,space-between,stretch);
+}
+
+.chart, .pie-chart {
+    width: 48%;
+    margin: 0 auto;
+}

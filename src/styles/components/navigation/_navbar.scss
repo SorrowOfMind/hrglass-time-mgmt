@@ -1,0 +1,109 @@
+.navbar {
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    @include flexbox(row, space-between, center);
+    @include box-shadow(0,3px,5px,0,rgba(0,0,0,0.2));
+    padding: 0 1rem;
+    z-index: 100;
+} 
+
+.navbar.navbar_app {
+    background-color: $color-sidenav;
+    @include box-shadow(0,2px,3px,0,rgba(0,0,0,0.3));
+}
+
+.logo {
+    font-size: 2.6rem;
+    color: $color-fontLightGrey;
+}
+
+.logo.logo_app {
+    color: #fff;
+}
+
+.nav__links {
+    @include flexbox(row, space-between, center);
+    height: 100%;
+    .links {
+        @include flexbox(row, center, center);
+        height: 100%;
+        }
+        .link {
+            height:100%;
+            cursor: pointer;
+            @include flexbox(row,center,center);
+            font-size: 1.8rem;
+            font-weight: 500;
+            position: relative;
+            overflow:hidden;
+            background: linear-gradient(to right, $color-fontGrey 50%, #FF5858 50%, #CC2E5D);
+            background-size: 200%;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: .5s ease-out;
+            &:before {
+                content: '';
+                position: absolute;
+                height: 3px;
+                width: 0;
+                bottom: 0;
+                left: 0;
+                background: $color-gradient;
+                transition: width .3s;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                height: 3px;
+                width: 0;
+                top: 0;
+                right: 0;
+                background: $color-gradient;
+                transition: width .3s;
+                transform-origin: right;
+            }
+            &:hover:before {
+                width: 100%;
+            }
+            &:hover:after {
+                width: 100%;
+            }
+            &:hover {
+                background-position:-100%;
+            }
+         .active {
+            background: $color-gradient;
+            background-size: 200%;
+            background-clip: text;
+         }
+         .link-anchor {
+             width: 100%;
+             height: 100%;
+             padding: 1rem;
+            @include flexbox(row, center, center)
+         }
+    }
+    .link.link_app {
+        background: linear-gradient(to right, #fff 50%, #FF5858 50%, #CC2E5D);
+        background-size: 200%;
+        background-clip: text;
+        &:hover {
+            background-position:-100%;
+        }
+    }
+    .link-logout {
+        padding: 1rem;
+    }
+    .initialsBox {
+        @include flexbox(row,center,center);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: $color-bg;
+        color: #fff;
+        font-size: 2.2rem;
+        margin-left: 1rem;
+    }
+}
+
